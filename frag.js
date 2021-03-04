@@ -17,7 +17,7 @@ void main(void)
 {
     vec2 uv = v_texcoord;
     
-    vec2 point = fract(uv * 0.1 + u_time * 0.1);
+    vec2 point = fract(uv * 0.1 + u_time * 0.05);
     
    vec4 dispColor = texture2D(displacement, point);
     
