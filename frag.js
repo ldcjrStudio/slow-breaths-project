@@ -17,14 +17,14 @@ void main(void)
 {
     vec2 uv = v_texcoord;
     
-    vec2 point = fract(uv * 0.1 + u_time * 0.05);
+    vec2 point = fract(uv * 0.1 + u_time * 0.1);
     
    vec4 dispColor = texture2D(displacement, point);
     
    vec4 tl = rgb(0.0, 102.0, 245.0);
    vec4 tr = rgb(156.0, 10.0, 35.0);
    vec4 br = rgb(156.0, 10.0, 235.0);
-   vec4 bl = rgb(177.0, 248.0, 252.0);
+   vec4 bl = rgb(50.0, 248.0, 252.0);
     
     float dispX = mix(-0.5, 0.5, dispColor.r);
     float dispY = mix(-0.5, 0.5, dispColor.r);
